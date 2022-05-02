@@ -1,12 +1,12 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Registration extends TestBase{
 
-    @BeforeTest
+    @BeforeMethod
     public void preCondition(){
         if(app.regist().elementExist()){
             app.regist().logout();
