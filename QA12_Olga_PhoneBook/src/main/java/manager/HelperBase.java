@@ -23,10 +23,7 @@ public class HelperBase {
         element.sendKeys(text);
     }
 
-    public void fillRegisLoginForm(String email, String password) {
-        type(By.xpath("//*[@placeholder='Email']"), email);
-        type(By.xpath("//*[@placeholder='Password']"), password);
-    }
+
     public boolean elementExist(){
         return wd.findElements(By.xpath("//*[text()='Sign Out']")).size()>0;
 
@@ -37,7 +34,7 @@ public class HelperBase {
     }
 
     public void logout(){
-        click(By.xpath("//button[text()='Sign Out"));
+        click(By.xpath("//button[text()='Sign Out']"));
     }
 
 }

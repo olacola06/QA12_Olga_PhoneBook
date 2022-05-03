@@ -14,8 +14,8 @@ public class TestBase {
         app.setUp();
     }
 
-    @AfterSuite
-    public void tearDown(){
-        app.stop();
-    }
+//    @AfterSuite
+//    public void tearDown(){
+//        app.stop();
+//    }
 }
