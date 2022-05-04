@@ -11,5 +11,6 @@ public class HelperLogin extends HelperBase {
     public void submitLoginBtn() {
         click(By.xpath("//button[text()=' Login']"));
     }
+
 }
 
