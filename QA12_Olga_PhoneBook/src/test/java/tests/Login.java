@@ -40,7 +40,7 @@ public class Login extends TestBase {
     public void LoginNegEmail(){
         User user = new User().withEmail("UserM624@gmailcom").withPassword("OlaMar345$");
         app.login().clickLoginBtn();
-        app.login().fillRegisLoginFormFS(user);
+        app.login().fillLoginFormModels(user);
         app.login().submitLoginBtn();
 
         Assert.assertFalse(app.login().elementExist());
@@ -50,7 +50,7 @@ public class Login extends TestBase {
     public void LoginNegPass(){
         User user = new User().withEmail("UserM624@gmailcom").withPassword("olamar345$");
         app.login().clickLoginBtn();
-        app.login().fillRegisLoginFormFS(user);
+        app.login().fillLoginFormModels(user);
         app.login().submitLoginBtn();
 
         Assert.assertFalse(app.login().elementExist());

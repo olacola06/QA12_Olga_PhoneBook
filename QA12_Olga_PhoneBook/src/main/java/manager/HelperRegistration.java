@@ -24,9 +24,5 @@ public class HelperRegistration extends HelperBase {
         type(By.xpath("//*[@placeholder='Email']"), user.email());
         type(By.xpath("//*[@placeholder='Password']"), user.password());
     }
-    public String checkMessage(){
-        String message;
-        return message = ("Wrong email or password format");
-    }
 
 }
