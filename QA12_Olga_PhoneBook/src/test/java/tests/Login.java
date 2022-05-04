@@ -2,12 +2,13 @@ package tests;
 
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
-    @BeforeTest
+    @BeforeMethod
     public void preCondition(){
         if(app.login().elementExist()){
             app.login().logout();
@@ -19,7 +20,17 @@ public class Login extends TestBase {
         String emailLogin = "UserM624@gmail.com";
         String password = "OlaMar345$";
         app.login().clickLoginBtn();
-        app.login().fillRegisLoginForm(emailLogin,password);
+        app.login().fillLoginForm(emailLogin,password);
+        app.login().submitLoginBtn();
+
+        Assert.assertTrue(app.login().elementExist());
+    }
+
+    @Test
+    public void LoginPosModels(){
+        User user = new User().withEmail("UserM624@gmail.com").withPassword("OlaMar345$");
+        app.login().clickLoginBtn();
+        app.login().fillLoginFormModels(user);
         app.login().submitLoginBtn();
 
         Assert.assertTrue(app.login().elementExist());
