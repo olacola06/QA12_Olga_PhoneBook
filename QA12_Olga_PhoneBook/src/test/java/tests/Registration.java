@@ -51,11 +51,10 @@ public class Registration extends TestBase{
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
 
-        app.regist().clickOkWhenFail();
+        //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
-       // app.regist().clickOkWhenFail();
 
-    }
+   }
 
     @Test
     public void RegistrationFailPassword() {
@@ -66,6 +65,7 @@ public class Registration extends TestBase{
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
 
+        //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
 
     }
