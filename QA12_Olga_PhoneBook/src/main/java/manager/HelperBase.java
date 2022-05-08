@@ -37,4 +37,12 @@ public class HelperBase {
         click(By.xpath("//button[text()='Sign Out']"));
     }
 
+    public void pause(int millis){
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

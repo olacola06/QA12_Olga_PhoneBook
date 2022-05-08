@@ -9,6 +9,7 @@ public class ApplicationManager {
     WebDriver wd;
     HelperRegistration regist;
     HelperLogin login;
+    HelperAddContact contact;
     public void setUp(){
         wd = new ChromeDriver();
         wd.manage().window().maximize();
@@ -16,6 +17,7 @@ public class ApplicationManager {
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
         regist = new HelperRegistration(wd);
         login = new HelperLogin(wd);
+        contact = new HelperAddContact(wd);
 
     }
 
@@ -28,6 +30,9 @@ public class ApplicationManager {
     }
     public HelperLogin login(){
         return login;
+    }
+    public HelperAddContact contact(){
+        return contact;
     }
 
 }

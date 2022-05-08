@@ -50,6 +50,7 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
+        app.regist().pause(10);
 
         //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
@@ -64,6 +65,7 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
+        app.regist().pause(10);
 
         //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
@@ -78,6 +80,7 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
+        app.regist().pause(10);
 
         Assert.assertFalse(app.regist().elementExist());
 
