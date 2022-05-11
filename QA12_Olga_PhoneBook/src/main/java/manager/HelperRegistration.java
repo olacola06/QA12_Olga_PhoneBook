@@ -27,14 +27,4 @@ public class HelperRegistration extends HelperBase {
         type(By.xpath("//*[@placeholder='Password']"), user.password());
     }
 
-    public void clickOkWhenFail(){
-        WebElement el = wd.findElement(By.cssSelector("div.login_login__3EHKB"));
-        int x = el.getRect().getWidth()/8*3;
-        int y = el.getRect().getHeight()/2;
-
-        Actions action = new Actions(wd);
-        action.moveToElement(el).moveByOffset(x,y).click().release().perform();
-
-    }
-
 }

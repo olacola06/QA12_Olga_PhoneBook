@@ -1,8 +1,12 @@
 package manager;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperBase {
     WebDriver wd;
@@ -43,6 +47,26 @@ public class HelperBase {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+    public void clickAlert() {
+        Alert alert = new WebDriverWait(wd, 5000).until(ExpectedConditions.alertIsPresent());
+        wd.switchTo().alert();
+        alert.accept();
+    }
+
+    public void clickAlertObject() {
+        Alert alert = new WebDriverWait(wd, 5000).until(ExpectedConditions.alertIsPresent());
+        wd.switchTo().alert();
+        String text = alert.getText();
+        System.out.println(text);
+        alert.accept();
+
+    }
+
+    public void failCode() {
+        WebElement el = wd.findElement(By.cssSelector("div.login_login__3EHKB :first-child"));
+        String message = el.getText();
+        System.out.println("Code of failure: - "+message);
     }
 
 }

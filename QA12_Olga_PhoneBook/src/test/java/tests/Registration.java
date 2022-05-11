@@ -17,7 +17,7 @@ public class Registration extends TestBase{
     int i = (int) (System.currentTimeMillis() / 1000) % 3600;
     String password = "OlaMar345$";
 
-    @Test
+    @Test(enabled = true)
     public void RegistrationPos() {
         String email = "UserM" + i + "@gmail.com";
         System.out.println("Email: "+email);
@@ -29,7 +29,7 @@ public class Registration extends TestBase{
         Assert.assertTrue(app.regist().elementExist());
     }
 
-    @Test
+    @Test(enabled = true)
     public void RegistrationPosModels() {
         User user = new User().withEmail("UserO" + i + "@gmail.com").withPassword(password);
         System.out.println("Email: "+user.email());
@@ -50,9 +50,10 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
-        app.regist().pause(10);
+        //app.regist().pause(2000);
+        app.regist().clickAlert();
+        app.regist().failCode();
 
-        //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
 
    }
@@ -65,9 +66,10 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
-        app.regist().pause(10);
+        //app.regist().pause(2000);
+        app.regist().clickAlertObject();
+        app.regist().failCode();
 
-        //app.regist().clickOkWhenFail();
         Assert.assertFalse(app.regist().elementExist());
 
     }
@@ -80,7 +82,9 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
-        app.regist().pause(10);
+        //app.regist().pause(2000);
+        app.regist().clickAlertObject();
+        app.regist().failCode();
 
         Assert.assertFalse(app.regist().elementExist());
 

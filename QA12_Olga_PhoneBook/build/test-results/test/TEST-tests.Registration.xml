@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Registration" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-05-11T08:05:13" hostname="DESKTOP-KF54E9L" time="69.393">
+  <properties/>
+  <testcase name="RegistrationFailEmail" classname="tests.Registration" time="12.194"/>
+  <testcase name="RegistrationFailExistUser" classname="tests.Registration" time="12.235"/>
+  <testcase name="RegistrationFailPassword" classname="tests.Registration" time="11.915"/>
+  <testcase name="RegistrationPos" classname="tests.Registration" time="1.426"/>
+  <testcase name="RegistrationPosModels" classname="tests.Registration" time="1.24"/>
+  <system-out><![CDATA[Email: UserM245gmail.com
+Code of failure: - Registration failed with code 400
+Email: UserM624@gmail.com
+User already exist
+Code of failure: - Registration failed with code 409
+Email: UserM245@gmail.com
+Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+Code of failure: - Registration failed with code 400
+Email: UserM245@gmail.com
+Email: UserO245@gmail.com
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
