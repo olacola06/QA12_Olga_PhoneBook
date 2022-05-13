@@ -26,9 +26,8 @@ public class AddNewContact extends TestBase {
         app.contact().clickAdd();
         app.contact().fillContactForm(contact);
         app.contact().clickSave();
-        app.contact().pause(2000);
+        app.contact().pause(10);
 
         Assert.assertTrue(app.contact().contactAdded());
-
     }
 }
