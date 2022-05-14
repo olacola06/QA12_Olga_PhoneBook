@@ -11,13 +11,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 
-public class HelperAddContact extends HelperBase{
+public class HelperAddContact extends HelperBase {
 
     public HelperAddContact(WebDriver wd) {
         super(wd);
     }
 
-    public void login(User user){
+    public void login(User user) {
         clickLoginBtn();
         type(By.xpath("//*[@placeholder='Email']"), user.email());
         type(By.xpath("//*[@placeholder='Password']"), user.password());
@@ -30,12 +30,12 @@ public class HelperAddContact extends HelperBase{
     }
 
     public void fillContactForm(Contact contact) {
-        type(By.cssSelector("input[placeholder ='Name']"),contact.getName());
-        type(By.cssSelector("input[placeholder ='Last Name']"),contact.getLastName());
-        type(By.cssSelector("input[placeholder ='Phone']"),contact.getPhone());
-        type(By.cssSelector("input[placeholder ='email']"),contact.getEmail());
-        type(By.cssSelector("input[placeholder ='Address']"),contact.getAddress());
-        type(By.cssSelector("input[placeholder ='description']"),contact.getDescription());
+        type(By.cssSelector("input[placeholder ='Name']"), contact.getName());
+        type(By.cssSelector("input[placeholder ='Last Name']"), contact.getLastName());
+        type(By.cssSelector("input[placeholder ='Phone']"), contact.getPhone());
+        type(By.cssSelector("input[placeholder ='email']"), contact.getEmail());
+        type(By.cssSelector("input[placeholder ='Address']"), contact.getAddress());
+        type(By.cssSelector("input[placeholder ='description']"), contact.getDescription());
     }
 
     public void clickSave() {
@@ -46,7 +46,29 @@ public class HelperAddContact extends HelperBase{
 
     public boolean contactAdded() {
         List<WebElement> list = wd.findElements(By.xpath("//div[@class='contact-item_card__2SOIM']"));
-        return list.size()>0;
+        return list.size() > 0;
 
     }
+
+    public boolean contactCreatedByName(String name) {
+        List<WebElement> list = wd.findElements(By.tagName("h2"));
+        for (WebElement el : list) {
+            if (el.getText().equals(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean contactCreatedByPhone(String phone) {
+        List<WebElement> list = wd.findElements(By.tagName("h3"));
+        for (WebElement el:list) {
+            if(el.getText().equals(phone)){
+                return true;
+            }
+
+        }
+        return false;
+    }
 }
+

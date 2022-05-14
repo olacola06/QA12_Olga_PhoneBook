@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Login" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-14T19:08:35" hostname="ARTEMKA" time="43.175">
+  <properties/>
+  <testcase name="LoginNegEmail" classname="tests.Login" time="10.955"/>
+  <testcase name="LoginNegPass" classname="tests.Login" time="10.971"/>
+  <testcase name="LoginPos" classname="tests.Login" time="0.601"/>
+  <testcase name="LoginPosModels" classname="tests.Login" time="0.521"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

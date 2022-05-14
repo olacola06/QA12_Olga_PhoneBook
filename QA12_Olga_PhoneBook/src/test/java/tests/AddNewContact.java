@@ -21,13 +21,15 @@ public class AddNewContact extends TestBase {
 
     @Test
     public void contactAddSuccess(){
-        Contact contact = Contact.builder().name("Olga").lastName("Ben").phone("+123456789").
-                email("Rff@gmail.com").address("Tel Aviv").description("Work contact").build();
+        Contact contact = Contact.builder().name("Oll"+i).lastName("Ben").phone("+123333"+i).
+                email("Rff"+i+"@gmail.com").address("Tel Aviv").description("Work contact").build();
         app.contact().clickAdd();
         app.contact().fillContactForm(contact);
         app.contact().clickSave();
-        app.contact().pause(10);
+        app.contact().pause(2000);
 
-        Assert.assertTrue(app.contact().contactAdded());
+        Assert.assertTrue(app.contact().contactCreatedByName(contact.getName()));
+        Assert.assertTrue(app.contact().contactCreatedByPhone(contact.getPhone()));
+        System.out.println("New contact created with Name - "+contact.getName()+" and with phone -"+contact.getPhone());
     }
 }

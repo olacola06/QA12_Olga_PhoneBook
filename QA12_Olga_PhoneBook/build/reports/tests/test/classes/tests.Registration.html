@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class tests.AddNewContact</title>
+<title>Test results - Class tests.Registration</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class tests.AddNewContact</h1>
+<h1>Class tests.Registration</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/tests.html">tests</a> &gt; AddNewContact</div>
+<a href="../packages/tests.html">tests</a> &gt; Registration</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.728s</div>
+<div class="counter">34.105s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">contactAddSuccess</td>
-<td class="success">3.728s</td>
+<td class="success">RegistrationFailEmail</td>
+<td class="success">10.952s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegistrationFailExistUser</td>
+<td class="success">11.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegistrationFailPassword</td>
+<td class="success">10.991s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegistrationPos</td>
+<td class="success">0.642s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegistrationPosModels</td>
+<td class="success">0.492s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,7 +107,21 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>New contact created with Name - Oll499 and with phone -+123333499
+<pre>Email: UserM499gmail.com
+Code of failure: - Registration failed with code 400
+Email: UserM624@gmail.com
+User already exist
+Code of failure: - Registration failed with code 409
+Email: UserM499@gmail.com
+Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+Code of failure: - Registration failed with code 400
+Email: UserM499@gmail.com
+Email: UserO499@gmail.com
 </pre>
 </span>
 </div>

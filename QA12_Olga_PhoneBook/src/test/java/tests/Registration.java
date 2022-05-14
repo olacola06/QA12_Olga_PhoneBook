@@ -50,7 +50,6 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
-        //app.regist().pause(2000);
         app.regist().clickAlert();
         app.regist().failCode();
 
