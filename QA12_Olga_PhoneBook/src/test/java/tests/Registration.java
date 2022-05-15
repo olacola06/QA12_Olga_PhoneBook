@@ -50,12 +50,11 @@ public class Registration extends TestBase{
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
-        app.regist().clickAlert();
+        //app.regist().clickAlert();
+        Assert.assertTrue(app.regist().isAlertPresent());
         app.regist().failCode();
 
-        Assert.assertFalse(app.regist().elementExist());
-
-   }
+ }
 
     @Test
     public void RegistrationFailPassword() {
