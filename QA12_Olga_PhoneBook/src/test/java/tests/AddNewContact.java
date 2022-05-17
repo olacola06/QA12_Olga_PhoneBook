@@ -5,6 +5,7 @@ import lombok.ToString;
 import models.Contact;
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -25,7 +26,7 @@ public class AddNewContact extends TestBase {
 
     @Test
     public void contactAddSuccess(){
-        Contact contact = Contact.builder().name("Oll"+i).lastName("Ben").phone("+123333"+i).
+        Contact contact = Contact.builder().name("Olala"+i).lastName("Ben").phone("+123333"+i).
                 email("Rff"+i+"@gmail.com").address("Tel Aviv").description("Work contact").build();
         app.contact().clickAdd();
         app.contact().fillContactForm(contact);
@@ -58,21 +59,32 @@ public class AddNewContact extends TestBase {
     @Test
     public void oneContactRemove(){
         int countBefore = app.contact().contactCount();
+
         app.contact().clickContacts();//selenium will choose the first contact in the list of contacts
         app.contact().clickRemove();
         app.contact().pause(2000);
+
         int countAfter = app.contact().contactCount();
 
         Assert.assertEquals(countBefore-countAfter,1);
 
     }
     @Test
-    public void removeOneContactCount(){
+    public void removeOneContactWithDetails(){
+        int countBefore = app.contact().contactCount();
+
+        app.contact().clickContactsWithDetails();
+        app.contact().clickRemove();;
+        app.contact().waitUntil(5000);
+
+        int countAfter = app.contact().contactCount();
+
+        Assert.assertEquals(countBefore-countAfter,1);
 
     }
 
     @Test
     public void removeAllContacts(){
-        
+
     }
 }

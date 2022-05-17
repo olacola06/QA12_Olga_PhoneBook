@@ -89,5 +89,20 @@ public class HelperAddContact extends HelperBase {
     public void clickRemove() {
         click(By.xpath("//*[text()='Remove']"));
     }
+
+    public void clickContactsWithDetails() {
+
+        String phoneNum = wd.findElement(By.cssSelector(".contact-item_card__2SOIM h3")).getText();
+        if(!contactListIsEmpty()){
+            clickContacts();
+            System.out.println("Deleted contact has phone number = " + phoneNum);
+        }
+    }
+
+    private boolean contactListIsEmpty() {
+
+        return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
+
+    }
 }
 
