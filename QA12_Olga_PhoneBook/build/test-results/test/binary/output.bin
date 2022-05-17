@@ -1,19 +1,2 @@
-CNew contact created with Name - Oll499 and with phone -+123333499
-	Email: UserM499gmail.com
-	6Code of failure: - Registration failed with code 400
-	
-Email: UserM624@gmail.com
-	
-User already exist
-	
-6Code of failure: - Registration failed with code 409
-	Email: UserM499@gmail.com
-	Wrong email or password format
-	K            Email must contains one @ and minimum 2 symbols after last dot
-	A            Password must contain at least one uppercase letter!
-	A            Password must contain at least one lowercase letter!
-	6            Password must contain at least one digit!
-	g            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
-	6Code of failure: - Registration failed with code 400
-	Email: UserM499@gmail.com
-	Email: UserO499@gmail.com
+13
+12

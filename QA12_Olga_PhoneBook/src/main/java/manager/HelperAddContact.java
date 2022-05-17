@@ -44,11 +44,11 @@ public class HelperAddContact extends HelperBase {
 
     }
 
-    public boolean contactAdded() {
-        List<WebElement> list = wd.findElements(By.xpath("//div[@class='contact-item_card__2SOIM']"));
-        return list.size() > 0;
-
-    }
+//    public boolean contactAdded() {
+//        List<WebElement> list = wd.findElements(By.xpath("//div[@class='contact-item_card__2SOIM']"));
+//        return list.size() > 0;
+//
+//    }
 
     public boolean contactCreatedByName(String name) {
         List<WebElement> list = wd.findElements(By.tagName("h2"));
@@ -69,6 +69,25 @@ public class HelperAddContact extends HelperBase {
 
         }
         return false;
+    }
+     public void waitUntil(int millis) {
+
+        new WebDriverWait (wd,5000).until(ExpectedConditions.
+                visibilityOf(wd.findElement(By.cssSelector(".contact-item_card__2SOIM"))));
+    }
+
+    public int contactCount() {
+        List<WebElement> list = wd.findElements(By.cssSelector(".contact-item_card__2SOIM"));
+        System.out.println(list.size());
+        return list.size();
+    }
+
+    public void clickContacts() {
+        click(By.cssSelector(".contact-item_card__2SOIM"));
+    }
+
+    public void clickRemove() {
+        click(By.xpath("//*[text()='Remove']"));
     }
 }
 

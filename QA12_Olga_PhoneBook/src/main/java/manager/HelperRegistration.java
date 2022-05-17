@@ -42,4 +42,16 @@ public class HelperRegistration extends HelperBase {
         }
     }
 
+    public String alertMessageExistUser() {
+        Alert alert = new WebDriverWait(wd,5000).until(ExpectedConditions.alertIsPresent());
+        if(alert==null){
+            System.out.println("Alert s not present");
+        }else{
+            wd.switchTo().alert();
+        }
+        String message = alert.getText();
+        alert.accept();
+        return message;
+
+    }
 }

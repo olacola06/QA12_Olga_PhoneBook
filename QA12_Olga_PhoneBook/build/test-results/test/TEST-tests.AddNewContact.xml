@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AddNewContact" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-14T19:08:32" hostname="ARTEMKA" time="3.728">
+<testsuite name="tests.AddNewContact" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-17T11:07:22" hostname="DESKTOP-KF54E9L" time="3.922">
   <properties/>
-  <testcase name="contactAddSuccess" classname="tests.AddNewContact" time="3.728"/>
-  <system-out><![CDATA[New contact created with Name - Oll499 and with phone -+123333499
+  <testcase name="oneContactRemove" classname="tests.AddNewContact" time="3.922"/>
+  <system-out><![CDATA[13
+12
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

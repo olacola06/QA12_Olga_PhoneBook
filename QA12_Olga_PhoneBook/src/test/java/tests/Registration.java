@@ -65,10 +65,8 @@ public class Registration extends TestBase{
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
         //app.regist().pause(2000);
-        app.regist().clickAlertObject();
+        Assert.assertTrue(app.regist().alertMessage());
         app.regist().failCode();
-
-        Assert.assertFalse(app.regist().elementExist());
 
     }
 
@@ -81,10 +79,8 @@ public class Registration extends TestBase{
         app.regist().fillRegisFormModels(user);
         app.regist().submitRegisBtn();
         //app.regist().pause(2000);
-        app.regist().clickAlertObject();
+        Assert.assertEquals(app.regist().alertMessageExistUser(),"User already exist");
         app.regist().failCode();
-
-        Assert.assertFalse(app.regist().elementExist());
 
     }
 

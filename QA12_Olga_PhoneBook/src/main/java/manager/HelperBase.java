@@ -54,13 +54,16 @@ public class HelperBase {
         alert.accept();
     }
 
-    public void clickAlertObject() {
+    public boolean alertMessage() {
         Alert alert = new WebDriverWait(wd, 5000).until(ExpectedConditions.alertIsPresent());
-        wd.switchTo().alert();
-        String text = alert.getText();
-        System.out.println(text);
-        alert.accept();
-
+        if (alert == null) {
+            return false;
+        } else {
+            wd.switchTo().alert();
+            String text = alert.getText();
+            alert.accept();
+            return text.contains("Wrong email or password format");
+        }
     }
 
     public void failCode() {

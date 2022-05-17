@@ -54,10 +54,7 @@ public class Login extends TestBase {
         app.login().clickLoginBtn();
         app.login().fillLoginFormModels(user);
         app.login().submitLoginBtn();
-        //app.login().pause(2000);
-        app.login().clickAlert();
-
-        Assert.assertFalse(app.login().elementExist());
+        Assert.assertTrue(app.login().alertMessage());
 
     }
 }
