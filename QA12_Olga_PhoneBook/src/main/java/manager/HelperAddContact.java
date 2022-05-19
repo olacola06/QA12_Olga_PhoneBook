@@ -88,21 +88,69 @@ public class HelperAddContact extends HelperBase {
 
     public void clickRemove() {
         click(By.xpath("//*[text()='Remove']"));
+        pause(1000);
     }
 
-    public void clickContactsWithDetails() {
+    public void clickContactsWithDetails() {//will be deleted the first contact in the contact list
 
         String phoneNum = wd.findElement(By.cssSelector(".contact-item_card__2SOIM h3")).getText();
+        System.out.println("Deleted contact has phone number = " + phoneNum);
         if(!contactListIsEmpty()){
             clickContacts();
-            System.out.println("Deleted contact has phone number = " + phoneNum);
         }
     }
 
-    private boolean contactListIsEmpty() {
+    public boolean contactListIsEmpty() {
 
         return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
 
     }
-}
 
+    public void removeContactsList() {
+
+        while (wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).size() != 0)
+        {clickContacts();
+            clickRemove();
+
+        }
+
+ }
+    public boolean noContacts2(){
+        WebElement el = wd.findElement(By.cssSelector(".contact-page_message__2qafk h1"));
+        String message = el.getText();
+        return message.contains("No Contacts here!");
+
+    }
+    public boolean noContacts(){
+        return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
+    }
+
+    public void removeAll() {
+        while(!wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty())
+        {
+        clickContacts();
+        clickRemove();
+        }
+    }
+
+    public void removeByName(Contact contact) {
+        List<WebElement> listOfContacts = wd.findElements(By.cssSelector(".contact-item_card__2SOIM h2"));
+        for (WebElement el:listOfContacts) {
+            if(el.getText().equals(contact)){
+                clickContacts();
+                clickRemove();
+            }
+        }
+
+    }
+
+    public boolean contactDeleted() {
+        List<WebElement> listOfContacts = wd.findElements(By.cssSelector(".contact-item_card__2SOIM h2"));
+        for (WebElement el:listOfContacts){
+            if(!el.getText().equals("Ivan2894")){
+                return true;
+            }
+        }
+        return false;
+    }
+}
