@@ -1,0 +1,23 @@
+19:19:36 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+19:19:37 INFO  tests.TestBase - start testcontactAddSuccess
+19:19:47 INFO  tests.TestBase - Test starts with contact--->tests.AddNewContact@752325ad
+19:19:50 INFO  tests.TestBase - End of TestcontactAddSuccess
+19:19:50 INFO  tests.TestBase - start testcontactAddSuccess
+19:19:50 INFO  tests.TestBase - Test starts with contact--->tests.AddNewContact@752325ad
+19:20:01 INFO  tests.TestBase - End of TestcontactAddSuccess
+19:20:01 INFO  tests.TestBase - start testcontactAddSuccess
+19:20:01 INFO  tests.TestBase - Test starts with contact--->tests.AddNewContact@752325ad
+19:20:12 INFO  tests.TestBase - End of TestcontactAddSuccess
+19:20:12 INFO  tests.TestBase - start testcontactAddSuccess
+19:20:12 INFO  tests.TestBase - Test starts with contact--->tests.AddNewContact@752325ad
+19:20:22 INFO  tests.TestBase - End of TestcontactAddSuccess
+19:20:22 INFO  tests.TestBase - start testoneContactAdd
+19:20:33 INFO  tests.TestBase - Test'Add new contact' starts with count of contacts--->0
+19:20:35 INFO  tests.TestBase - Test'Add new contact' ends with count of contacts--->10
+19:20:35 INFO  tests.TestBase - End of TestoneContactAdd
+19:20:35 INFO  tests.TestBase - start testoneContactRemove
+19:20:37 INFO  tests.TestBase - End of TestoneContactRemove
+19:20:37 INFO  tests.TestBase - start testremoveContactByName
+19:20:37 INFO  tests.TestBase - End of TestremoveContactByName
+19:20:37 INFO  tests.TestBase - start testremoveOneContactWithDetails
+19:20:38 INFO  tests.TestBase - End of TestremoveOneContactWithDetails

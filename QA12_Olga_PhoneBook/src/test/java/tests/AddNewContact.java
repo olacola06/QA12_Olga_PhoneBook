@@ -21,13 +21,14 @@ public class AddNewContact extends TestBase {
         }
 
     }
-
     int i = (int) (System.currentTimeMillis()/1000)%3600;
 
-    @Test(invocationCount = 4)
+    @Test(invocationCount = 2)
     public void contactAddSuccess(){
+        int i = (int) (System.currentTimeMillis()/1000)%3600;
         Contact contact = Contact.builder().name("Olala"+i).lastName("Ben").phone("+123333"+i).
                 email("Rff"+i+"@gmail.com").address("Tel Aviv").description("Work contact").build();
+        logger.info("Test starts with contact--->"+contact.toString());
         app.contact().clickAdd();
         app.contact().fillContactForm(contact);
         app.contact().clickSave();
@@ -58,46 +59,50 @@ public class AddNewContact extends TestBase {
         Assert.assertEquals(countEnd-countStart,1);
 
     }
-//    @Test
-//    public void oneContactRemove(){
-//        int countBefore = app.contact().contactCount();
-//
-//        app.contact().clickContacts();//selenium will choose the first contact in the list of contacts
-//        app.contact().clickRemove();
-//
-//        int countAfter = app.contact().contactCount();
-//
-//        Assert.assertEquals(countBefore-countAfter,1);
-//
-//    }
-//    @Test
-//    public void removeOneContactWithDetails(){
-//        int countBefore = app.contact().contactCount();
-//
-//        app.contact().clickContactsWithDetails();
-//        app.contact().clickRemove();
-//
-//        int countAfter = app.contact().contactCount();
-//
-//        Assert.assertEquals(countBefore-countAfter,1);
-//
-//    }
     @Test
-    public void removeContactByName(){
-        app.contact().removeByName(Contact.builder().name("Ivan2894").build());
+    public void oneContactRemove(){
+        int countBefore = app.contact().contactCount();
+        logger.info("Contact's list start with "+countBefore+"contacts");
 
-        //Assert.assertEquals("","");
-        Assert.assertTrue(app.contact().contactDeleted());
+        app.contact().clickContacts();//selenium will choose the first contact in the list of contacts
+        app.contact().clickRemove();
+
+        int countAfter = app.contact().contactCount();
+
+        Assert.assertEquals(countBefore-countAfter,1);
+        logger.info("Contact's list ends with "+countAfter+"contacts");
 
     }
+    @Test
+    public void removeOneContactWithDetails(){
+        int countBefore = app.contact().contactCount();
+        logger.info("Contact's list start with "+countBefore+"contacts");
 
+        app.contact().clickContactsWithDetails();
+        app.contact().clickRemove();
+
+        int countAfter = app.contact().contactCount();
+
+        Assert.assertEquals(countBefore-countAfter,1);
+        logger.info("Contact's list start with "+countBefore+"contacts");
+
+    }
 //    @Test
-//    public void removeAllContacts(){
-//        app.contact().removeContactsList();
+//    public void removeContactByName(){
+//        app.contact().removeByName(Contact.builder().name("Ivan2894").build());
 //
-//       Assert.assertTrue(app.contact().noContacts());
+//        //Assert.assertEquals("","");
+//        Assert.assertTrue(app.contact().contactDeleted());
 //
 //    }
+
+    @Test
+    public void removeAllContacts(){
+        app.contact().removeContactsList();
+
+       Assert.assertTrue(app.contact().noContacts());
+
+    }
 //    @Test
 //    public void removeAllContact(){
 //        app.contact().removeAll();
