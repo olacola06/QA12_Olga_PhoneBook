@@ -1,13 +1,8 @@
 package tests;
 
 
-import lombok.ToString;
 import models.Contact;
 import models.User;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -23,7 +18,7 @@ public class AddNewContact extends TestBase {
     }
     int i = (int) (System.currentTimeMillis()/1000)%3600;
 
-    @Test(invocationCount = 2)
+    @Test(invocationCount = 3)
     public void contactAddSuccess(){
         int i = (int) (System.currentTimeMillis()/1000)%3600;
         Contact contact = Contact.builder().name("Olala"+i).lastName("Ben").phone("+123333"+i).
@@ -76,27 +71,28 @@ public class AddNewContact extends TestBase {
     @Test
     public void removeOneContactWithDetails(){
         int countBefore = app.contact().contactCount();
-        logger.info("Contact's list start with "+countBefore+"contacts");
+        logger.info("Contact's list starts with "+countBefore+"contacts");
 
         app.contact().clickContactsWithDetails();
-        app.contact().clickRemove();
 
         int countAfter = app.contact().contactCount();
 
         Assert.assertEquals(countBefore-countAfter,1);
-        logger.info("Contact's list start with "+countBefore+"contacts");
+        logger.info("Contact's list ends with "+countAfter+"contacts");
 
     }
-//    @Test
-//    public void removeContactByName(){
-//        app.contact().removeByName(Contact.builder().name("Ivan2894").build());
-//
-//        //Assert.assertEquals("","");
-//        Assert.assertTrue(app.contact().contactDeleted());
-//
-//    }
-
     @Test
+    public void removeContactByName(){
+
+        Contact contact = Contact.builder().name("Ivan"+i).build();
+        logger.info("Contact to be deleted has name--->"+contact.getName());
+        app.contact().removeByName(contact);
+
+        Assert.assertTrue(app.contact().contactDeleted(contact));
+
+    }
+
+    @Test(enabled = false)
     public void removeAllContacts(){
         app.contact().removeContactsList();
 

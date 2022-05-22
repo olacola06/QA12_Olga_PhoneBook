@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Registration" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-05-22T05:57:48" hostname="ARTEMKA" time="19.254">
+  <properties/>
+  <testcase name="RegistrationFailEmail" classname="tests.Registration" time="0.954"/>
+  <testcase name="RegistrationFailExistUser" classname="tests.Registration" time="0.959"/>
+  <testcase name="RegistrationFailPassword" classname="tests.Registration" time="0.956"/>
+  <testcase name="RegistrationPos" classname="tests.Registration" time="0.659"/>
+  <testcase name="RegistrationPosModels" classname="tests.Registration" time="0.501"/>
+  <system-out><![CDATA[08:57:48  INFO  tests.TestBase - start test:  RegistrationFailEmail
+08:57:48  INFO  tests.TestBase - registration with: email-> UserM3430gmail.com and password-> OlaMar345$
+Code of failure: - Registration failed with code 400
+08:57:49  INFO  tests.TestBase - End of Test:  RegistrationFailEmail
+08:57:49  INFO  tests.TestBase - start test:  RegistrationFailExistUser
+08:57:54  INFO  tests.TestBase - registration with: email-> UserM624@gmail.com and password-> OlaMar345$
+Code of failure: - Registration failed with code 409
+08:57:55  INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+08:57:55  INFO  tests.TestBase - start test:  RegistrationFailPassword
+08:58:00  INFO  tests.TestBase - registration with: email-> UserM3430@gmail.com and password-> OlaMar345
+Code of failure: - Registration failed with code 400
+08:58:01  INFO  tests.TestBase - End of Test:  RegistrationFailPassword
+08:58:01  INFO  tests.TestBase - start test:  RegistrationPos
+08:58:06  INFO  tests.TestBase - registration with: email-> UserM3430@gmail.com and password-> OlaMar345$
+08:58:07  INFO  tests.TestBase - End of Test:  RegistrationPos
+08:58:07  INFO  tests.TestBase - start test:  RegistrationPosModels
+08:58:07  INFO  tests.TestBase - registration with: email-> UserO3430@gmail.com and password-> OlaMar345$
+08:58:07  INFO  tests.TestBase - End of Test:  RegistrationPosModels
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

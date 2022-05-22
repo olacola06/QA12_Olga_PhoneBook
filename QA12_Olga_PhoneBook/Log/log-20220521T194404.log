@@ -1,7 +1,0 @@
-19:44:06 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
-19:44:07 INFO  tests.TestBase - start testcontactAddSuccess
-19:44:17 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala2644, lastName=Ben, phone=+1233332644, email=Rff2644@gmail.com, address=Tel Aviv, description=Work contact)
-19:44:19 INFO  tests.TestBase - End of TestcontactAddSuccess
-19:44:19 INFO  tests.TestBase - start testcontactAddSuccess
-19:44:19 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala2644, lastName=Ben, phone=+1233332644, email=Rff2644@gmail.com, address=Tel Aviv, description=Work contact)
-19:44:30 INFO  tests.TestBase - End of TestcontactAddSuccess

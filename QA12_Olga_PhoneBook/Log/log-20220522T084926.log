@@ -1,0 +1,45 @@
+08:49:28 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+08:49:28 INFO  tests.TestBase - start test:  contactAddSuccess
+08:49:34 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala2974, lastName=Ben, phone=+1233332974, email=Rff2974@gmail.com, address=Tel Aviv, description=Work contact)
+08:49:36 INFO  tests.TestBase - End of Test:  contactAddSuccess
+08:49:36 INFO  tests.TestBase - start test:  contactAddSuccess
+08:49:36 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala2976, lastName=Ben, phone=+1233332976, email=Rff2976@gmail.com, address=Tel Aviv, description=Work contact)
+08:49:37 INFO  tests.TestBase - End of Test:  contactAddSuccess
+08:49:37 INFO  tests.TestBase - start test:  contactAddSuccess
+08:49:37 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala2977, lastName=Ben, phone=+1233332977, email=Rff2977@gmail.com, address=Tel Aviv, description=Work contact)
+08:49:39 INFO  tests.TestBase - End of Test:  contactAddSuccess
+08:49:39 INFO  tests.TestBase - start test:  oneContactAdd
+08:49:39 INFO  tests.TestBase - Test'Add new contact' starts with count of contacts--->5
+08:49:42 INFO  tests.TestBase - Test'Add new contact' ends with count of contacts--->6
+08:49:42 INFO  tests.TestBase - End of Test:  oneContactAdd
+08:49:42 INFO  tests.TestBase - start test:  oneContactRemove
+08:49:42 INFO  tests.TestBase - Contact's list start with 6contacts
+08:49:43 INFO  tests.TestBase - Contact's list ends with 5contacts
+08:49:43 INFO  tests.TestBase - End of Test:  oneContactRemove
+08:49:43 INFO  tests.TestBase - start test:  removeContactByName
+08:49:43 INFO  tests.TestBase - Contact to be deleted has name--->Ivan2966
+08:49:44 INFO  manager.HelperBase - Contact was deleted
+08:49:44 INFO  tests.TestBase - End of Test:  removeContactByName
+08:49:44 INFO  tests.TestBase - start test:  removeOneContactWithDetails
+08:49:44 INFO  tests.TestBase - Contact's list starts with 4contacts
+08:49:44 INFO  manager.HelperBase - Deleted contact has phone number = +1233332974
+08:49:45 INFO  tests.TestBase - Contact's list ends with 3contacts
+08:49:45 INFO  tests.TestBase - End of Test:  removeOneContactWithDetails
+08:49:45 INFO  tests.TestBase - start test:  LoginNegEmail
+08:49:51 INFO  tests.TestBase - End of Test:  LoginNegEmail
+08:49:51 INFO  tests.TestBase - start test:  LoginNegPass
+08:49:57 INFO  tests.TestBase - End of Test:  LoginNegPass
+08:49:57 INFO  tests.TestBase - start test:  LoginPos
+08:50:03 INFO  tests.TestBase - End of Test:  LoginPos
+08:50:03 INFO  tests.TestBase - start test:  LoginPosModels
+08:50:03 INFO  tests.TestBase - End of Test:  LoginPosModels
+08:50:04 INFO  tests.TestBase - start test:  RegistrationFailEmail
+08:50:05 INFO  tests.TestBase - End of Test:  RegistrationFailEmail
+08:50:05 INFO  tests.TestBase - start test:  RegistrationFailExistUser
+08:50:11 INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+08:50:11 INFO  tests.TestBase - start test:  RegistrationFailPassword
+08:50:17 INFO  tests.TestBase - End of Test:  RegistrationFailPassword
+08:50:17 INFO  tests.TestBase - start test:  RegistrationPos
+08:50:22 INFO  tests.TestBase - End of Test:  RegistrationPos
+08:50:22 INFO  tests.TestBase - start test:  RegistrationPosModels
+08:50:23 INFO  tests.TestBase - End of Test:  RegistrationPosModels

@@ -20,7 +20,7 @@ public class Registration extends TestBase{
     @Test
     public void RegistrationPos() {
         String email = "UserM" + i + "@gmail.com";
-        System.out.println("Email: "+email);
+        logger.info("registration with: email-> "+email+" and password-> "+password);
 
         app.regist().clickLoginBtn();
         app.regist().fillRegisForm(email,password);
@@ -32,7 +32,7 @@ public class Registration extends TestBase{
      @Test(enabled = true)
     public void RegistrationPosModels() {
         User user = new User().withEmail("UserO" + i + "@gmail.com").withPassword(password);
-        System.out.println("Email: "+user.email());
+         logger.info("registration with: email-> "+user.email()+" and password-> "+user.password());
 
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
@@ -45,7 +45,7 @@ public class Registration extends TestBase{
     public void RegistrationFailEmail() {
 
         User user = new User().withEmail("UserM" + i + "gmail.com").withPassword(password);
-        System.out.println("Email: "+user.email());
+        logger.info("registration with: email-> "+user.email()+" and password-> "+user.password());
 
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
@@ -59,7 +59,7 @@ public class Registration extends TestBase{
     @Test
     public void RegistrationFailPassword() {
         User user = new User().withEmail("UserM" + i + "@gmail.com").withPassword("OlaMar345");
-        System.out.println("Email: "+user.email());
+        logger.info("registration with: email-> "+user.email()+" and password-> "+user.password());
 
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);
@@ -73,7 +73,7 @@ public class Registration extends TestBase{
     @Test
     public void RegistrationFailExistUser() {
         User user = new User().withEmail("UserM624@gmail.com").withPassword("OlaMar345$");
-        System.out.println("Email: "+user.email());
+        logger.info("registration with: email-> "+user.email()+" and password-> "+user.password());
 
         app.regist().clickLoginBtn();
         app.regist().fillRegisFormModels(user);

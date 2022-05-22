@@ -44,12 +44,6 @@ public class HelperAddContact extends HelperBase {
 
     }
 
-//    public boolean contactAdded() {
-//        List<WebElement> list = wd.findElements(By.xpath("//div[@class='contact-item_card__2SOIM']"));
-//        return list.size() > 0;
-//
-//    }
-
     public boolean contactCreatedByName(String name) {
         List<WebElement> list = wd.findElements(By.tagName("h2"));
         for (WebElement el : list) {
@@ -78,7 +72,7 @@ public class HelperAddContact extends HelperBase {
 
     public int contactCount() {
         List<WebElement> list = wd.findElements(By.cssSelector(".contact-item_card__2SOIM"));
-        System.out.println(list.size());
+        System.out.println("Total amount of contacts--->"+list.size());
         return list.size();
     }
 
@@ -94,9 +88,10 @@ public class HelperAddContact extends HelperBase {
     public void clickContactsWithDetails() {//will be deleted the first contact in the contact list
 
         String phoneNum = wd.findElement(By.cssSelector(".contact-item_card__2SOIM h3")).getText();
-        System.out.println("Deleted contact has phone number = " + phoneNum);
-        if(!contactListIsEmpty()){
+        if(phoneNum.length()>0){
             clickContacts();
+            logger.info("Deleted contact has phone number = " + phoneNum);
+            clickRemove();
         }
     }
 
@@ -136,7 +131,7 @@ public class HelperAddContact extends HelperBase {
     public void removeByName(Contact contact) {
         List<WebElement> listOfContacts = wd.findElements(By.cssSelector(".contact-item_card__2SOIM h2"));
         for (WebElement el:listOfContacts) {
-            if(el.getText().equals(contact)){
+            if(el.getText().equals(contact.getName())){
                 clickContacts();
                 clickRemove();
             }
@@ -144,10 +139,11 @@ public class HelperAddContact extends HelperBase {
 
     }
 
-    public boolean contactDeleted() {
+    public boolean contactDeleted(Contact contact) {
         List<WebElement> listOfContacts = wd.findElements(By.cssSelector(".contact-item_card__2SOIM h2"));
         for (WebElement el:listOfContacts){
-            if(!el.getText().equals("Ivan2894")){
+            if(!el.getText().equals(contact.getName())){
+                logger.info("Contact was deleted");
                 return true;
             }
         }

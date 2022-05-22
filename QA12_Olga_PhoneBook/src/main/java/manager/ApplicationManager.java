@@ -35,7 +35,7 @@ public class ApplicationManager {
             logger.info("All tests starts in 'Firefox' browser");
         }
         wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
         regist = new HelperRegistration(wd);
         login = new HelperLogin(wd);
