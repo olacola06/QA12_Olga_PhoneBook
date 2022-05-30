@@ -37,6 +37,9 @@ public class ApplicationManager {
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/home");
+
+        wd.register(new MyListener());
+
         regist = new HelperRegistration(wd);
         login = new HelperLogin(wd);
         contact = new HelperAddContact(wd);
