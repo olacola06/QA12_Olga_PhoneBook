@@ -19,11 +19,13 @@ public class Login extends TestBase {
     public void LoginPos(){
         String emailLogin = "UserM624@gmail.com";
         String password = "OlaMar345$";
+        logger.info("Login with data: -->"+emailLogin+"; "+password);
         app.login().clickLoginBtn();
         app.login().fillLoginForm(emailLogin,password);
         app.login().submitLoginBtn();
 
         Assert.assertTrue(app.login().elementExist());
+        logger.info("Test finished --> Success");
     }
 
     @Test
