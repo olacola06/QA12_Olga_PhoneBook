@@ -17,7 +17,7 @@ public class TestBase {
 
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun=true)
     public void startLogger(Method m){
         logger.info("start test:  " + m.getName());
     }
@@ -27,7 +27,7 @@ public class TestBase {
         logger.info("End of Test:  "+m.getName());
     }
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void init(){
         app.setUp();
     }

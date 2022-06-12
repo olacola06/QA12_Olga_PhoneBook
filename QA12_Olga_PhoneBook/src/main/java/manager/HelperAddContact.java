@@ -75,6 +75,14 @@ public class HelperAddContact extends HelperBase {
         System.out.println("Total amount of contacts--->"+list.size());
         return list.size();
     }
+    public void totalContacts(){
+        List<WebElement> contactsCount = wd.findElements(By.cssSelector(".contact-item_card__2SOIM"));
+        if (contactsCount.size()<3){
+            for(int i=0; i<3;i++){
+
+            }
+        }
+    }
 
     public void clickContacts() {
         click(By.cssSelector(".contact-item_card__2SOIM"));

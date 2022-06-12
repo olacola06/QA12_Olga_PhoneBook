@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.Registration" tests="5" skipped="5" failures="0" errors="0" timestamp="2022-06-12T08:34:57" hostname="DESKTOP-KF54E9L" time="0.027">
+  <properties/>
+  <testcase name="RegistrationFailEmail" classname="tests.Registration" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="RegistrationFailExistUser" classname="tests.Registration" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="RegistrationFailPassword" classname="tests.Registration" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="RegistrationPos" classname="tests.Registration" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="RegistrationPosModels" classname="tests.Registration" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[11:34:57  INFO  tests.TestBase - start test:  RegistrationFailEmail
+11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailEmail
+11:34:57  INFO  tests.TestBase - start test:  RegistrationFailExistUser
+11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+11:34:57  INFO  tests.TestBase - start test:  RegistrationFailPassword
+11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailPassword
+11:34:57  INFO  tests.TestBase - start test:  RegistrationPos
+11:34:57  INFO  tests.TestBase - End of Test:  RegistrationPos
+11:34:57  INFO  tests.TestBase - start test:  RegistrationPosModels
+11:34:57  INFO  tests.TestBase - End of Test:  RegistrationPosModels
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -4,17 +4,25 @@ package tests;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AddNewContact extends TestBase {
 
-    @BeforeMethod
+    @BeforeClass(alwaysRun = true)
     public void preCondition(){
         if (!app.contact().elementExist()){
             app.contact().login(new User().withEmail("UserM624@gmail.com").withPassword("OlaMar345$"));
         }
 
+    }
+
+    @BeforeMethod(alwaysRun = true)
+    public void contactAmount(){
+        if(app.contact().contactCount()<3){
+            contactAddSuccess();
+        }
     }
     int i = (int) (System.currentTimeMillis()/1000)%3600;
 
@@ -92,7 +100,7 @@ public class AddNewContact extends TestBase {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void removeAllContacts(){
         app.contact().removeContactsList();
 
