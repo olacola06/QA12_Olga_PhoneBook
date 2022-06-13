@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.Registration" tests="5" skipped="5" failures="0" errors="0" timestamp="2022-06-12T08:34:57" hostname="DESKTOP-KF54E9L" time="0.027">
+<testsuite name="tests.Registration" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-13T08:57:13" hostname="DESKTOP-KF54E9L" time="2.204">
   <properties/>
-  <testcase name="RegistrationFailEmail" classname="tests.Registration" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="RegistrationFailExistUser" classname="tests.Registration" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="RegistrationFailPassword" classname="tests.Registration" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="RegistrationPos" classname="tests.Registration" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="RegistrationPosModels" classname="tests.Registration" time="0.0">
-    <skipped/>
-  </testcase>
-  <system-out><![CDATA[11:34:57  INFO  tests.TestBase - start test:  RegistrationFailEmail
-11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailEmail
-11:34:57  INFO  tests.TestBase - start test:  RegistrationFailExistUser
-11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
-11:34:57  INFO  tests.TestBase - start test:  RegistrationFailPassword
-11:34:57  INFO  tests.TestBase - End of Test:  RegistrationFailPassword
-11:34:57  INFO  tests.TestBase - start test:  RegistrationPos
-11:34:57  INFO  tests.TestBase - End of Test:  RegistrationPos
-11:34:57  INFO  tests.TestBase - start test:  RegistrationPosModels
-11:34:57  INFO  tests.TestBase - End of Test:  RegistrationPosModels
+  <testcase name="RegistrationFailPassword" classname="tests.Registration" time="2.204"/>
+  <system-out><![CDATA[11:57:13  INFO  tests.TestBase - start test:  RegistrationFailPassword
+11:57:13  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:57:13  INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:57:13  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //button[text()='Sign Out']
+11:57:13  INFO  manager.MyListener - Element with locator-->By.xpath: //button[text()='Sign Out']  was found
+11:57:13  INFO  tests.TestBase - registration with: email-> UserM3415@gmail.com and password-> OlaMar345
+11:57:13  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:57:13  INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:57:14  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+11:57:14  INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+11:57:14  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+11:57:14  INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+11:57:14  INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+11:57:14  INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+11:57:15  INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.login_login__3EHKB :first-child
+11:57:16  INFO  manager.MyListener - Element with locator-->By.cssSelector: div.login_login__3EHKB :first-child  was found
+Code of failure: - Registration failed with code 400
+11:57:16  INFO  tests.TestBase - End of Test:  RegistrationFailPassword
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

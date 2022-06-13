@@ -1,9 +1,8 @@
 <suite name="Suite1" verbose="1" >
     <test name="Reg"> -
         <classes>
-            <class name="tests.Login"/>
             <class name="tests.Registration"/>
-
+            <class name="tests.Login"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,138 @@
+18:49:59 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+18:50:04 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+18:50:09 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+18:50:09 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+18:50:09 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+18:50:09 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+18:50:09 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+18:50:10 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+18:50:10 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+18:50:10 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //button[text()=' Login']
+18:50:10 INFO  manager.MyListener - Element with locator-->By.xpath: //button[text()=' Login']  was found
+18:50:10 INFO  tests.TestBase - start test:  contactAddSuccess
+18:50:10 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:15 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:15 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala3015, lastName=Ben, phone=+1233333015, email=Rff3015@gmail.com, address=Tel Aviv, description=Work contact)
+18:50:15 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='ADD']
+18:50:15 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='ADD']  was found
+18:50:16 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Name']
+18:50:16 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Name']  was found
+18:50:16 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Last Name']
+18:50:16 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Last Name']  was found
+18:50:16 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Phone']
+18:50:17 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Phone']  was found
+18:50:17 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='email']
+18:50:17 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='email']  was found
+18:50:17 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Address']
+18:50:17 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Address']  was found
+18:50:18 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='description']
+18:50:18 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='description']  was found
+18:50:18 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child
+18:50:18 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child  was found
+18:50:18 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:19 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:19 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h2
+18:50:19 INFO  manager.MyListener - Element with locator-->By.tagName: h2  was found
+18:50:19 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h3
+18:50:19 INFO  manager.MyListener - Element with locator-->By.tagName: h3  was found
+18:50:19 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala3019, lastName=Ben, phone=+1233333019, email=Rff3019@gmail.com, address=Tel Aviv, description=Work contact)
+18:50:19 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='ADD']
+18:50:19 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='ADD']  was found
+18:50:19 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Name']
+18:50:19 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Name']  was found
+18:50:20 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Last Name']
+18:50:20 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Last Name']  was found
+18:50:20 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Phone']
+18:50:20 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Phone']  was found
+18:50:21 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='email']
+18:50:21 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='email']  was found
+18:50:21 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Address']
+18:50:21 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Address']  was found
+18:50:21 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='description']
+18:50:21 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='description']  was found
+18:50:22 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child
+18:50:22 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child  was found
+18:50:22 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:26 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:26 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h2
+18:50:26 INFO  manager.MyListener - Element with locator-->By.tagName: h2  was found
+18:50:26 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h3
+18:50:26 INFO  manager.MyListener - Element with locator-->By.tagName: h3  was found
+18:50:26 INFO  tests.TestBase - End of Test:  contactAddSuccess
+18:50:26 INFO  tests.TestBase - start test:  contactAddSuccess
+18:50:26 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:26 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:26 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala3026, lastName=Ben, phone=+1233333026, email=Rff3026@gmail.com, address=Tel Aviv, description=Work contact)
+18:50:26 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='ADD']
+18:50:26 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='ADD']  was found
+18:50:26 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Name']
+18:50:26 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Name']  was found
+18:50:27 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Last Name']
+18:50:27 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Last Name']  was found
+18:50:27 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Phone']
+18:50:27 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Phone']  was found
+18:50:27 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='email']
+18:50:28 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='email']  was found
+18:50:28 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Address']
+18:50:28 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Address']  was found
+18:50:28 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='description']
+18:50:28 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='description']  was found
+18:50:29 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child
+18:50:29 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child  was found
+18:50:29 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:30 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:30 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h2
+18:50:30 INFO  manager.MyListener - Element with locator-->By.tagName: h2  was found
+18:50:30 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h3
+18:50:30 INFO  manager.MyListener - Element with locator-->By.tagName: h3  was found
+18:50:30 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala3030, lastName=Ben, phone=+1233333030, email=Rff3030@gmail.com, address=Tel Aviv, description=Work contact)
+18:50:30 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='ADD']
+18:50:30 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='ADD']  was found
+18:50:30 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Name']
+18:50:30 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Name']  was found
+18:50:30 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Last Name']
+18:50:30 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Last Name']  was found
+18:50:31 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Phone']
+18:50:31 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Phone']  was found
+18:50:31 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='email']
+18:50:31 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='email']  was found
+18:50:32 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Address']
+18:50:32 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Address']  was found
+18:50:32 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='description']
+18:50:32 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='description']  was found
+18:50:33 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child
+18:50:33 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child  was found
+18:50:33 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:34 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:34 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h2
+18:50:34 INFO  manager.MyListener - Element with locator-->By.tagName: h2  was found
+18:50:34 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h3
+18:50:34 INFO  manager.MyListener - Element with locator-->By.tagName: h3  was found
+18:50:34 INFO  tests.TestBase - End of Test:  contactAddSuccess
+18:50:34 INFO  tests.TestBase - start test:  contactAddSuccess
+18:50:34 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:34 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:34 INFO  tests.TestBase - Test starts with contact--->Contact(name=Olala3034, lastName=Ben, phone=+1233333034, email=Rff3034@gmail.com, address=Tel Aviv, description=Work contact)
+18:50:34 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='ADD']
+18:50:34 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='ADD']  was found
+18:50:34 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Name']
+18:50:34 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Name']  was found
+18:50:35 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Last Name']
+18:50:35 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Last Name']  was found
+18:50:35 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Phone']
+18:50:35 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Phone']  was found
+18:50:35 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='email']
+18:50:35 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='email']  was found
+18:50:36 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='Address']
+18:50:36 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='Address']  was found
+18:50:36 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: input[placeholder ='description']
+18:50:36 INFO  manager.MyListener - Element with locator-->By.cssSelector: input[placeholder ='description']  was found
+18:50:37 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child
+18:50:37 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.add_form__2rsm2 :last-child  was found
+18:50:37 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: .contact-item_card__2SOIM
+18:50:37 INFO  manager.MyListener - Element with locator-->By.cssSelector: .contact-item_card__2SOIM  was found
+18:50:37 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h2
+18:50:38 INFO  manager.MyListener - Element with locator-->By.tagName: h2  was found
+18:50:38 INFO  manager.MyListener - Start searching element with locator-->By.tagName: h3
+18:50:38 INFO  manager.MyListener - Element with locator-->By.tagName: h3  was found
+18:50:38 INFO  tests.TestBase - End of Test:  contactAddSuccess

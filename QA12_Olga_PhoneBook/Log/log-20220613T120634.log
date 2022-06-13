@@ -1,0 +1,61 @@
+12:06:40 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+12:06:45 INFO  tests.TestBase - start test:  RegistrationPos
+12:06:45 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:06:50 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:06:50 INFO  tests.TestBase - registration with: email-> Ofrog796@gmail.com and password-> As12796$
+12:06:50 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+12:06:50 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+12:06:51 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+12:06:51 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+12:06:52 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+12:06:52 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+12:06:52 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+12:06:52 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+12:06:52 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:06:53 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:06:53 INFO  tests.TestBase - End of Test:  RegistrationPos
+12:06:53 INFO  tests.TestBase - start test:  RegistrationPos
+12:06:53 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:06:53 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:06:53 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //button[text()='Sign Out']
+12:06:53 INFO  manager.MyListener - Element with locator-->By.xpath: //button[text()='Sign Out']  was found
+12:06:53 INFO  tests.TestBase - registration with: email-> Ofrog796@gmail.com and password-> As12796$
+12:06:53 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+12:06:53 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+12:06:53 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+12:06:53 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+12:06:54 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+12:06:54 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+12:06:54 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+12:06:54 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+12:06:54 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:06:55 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:06:55 INFO  tests.TestBase - End of Test:  RegistrationPos
+12:06:55 INFO  tests.TestBase - start test:  RegistrationPos
+12:06:55 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:06:55 INFO  manager.MyListener - There is some problem-->https://contacts-app.tobbymarshall815.vercel.app/login
+12:06:55 INFO  manager.MyListener - unexpected alert open: {Alert text : User already exist}
+  (Session info: chrome=102.0.5005.115): User already exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KF54E9L', ip: '10.11.182.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Olga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfd0da49188500b11e1832051026bd3
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+12:06:55 INFO  manager.MyListener - org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User already exist}
+  (Session info: chrome=102.0.5005.115): User already exist
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KF54E9L', ip: '10.11.182.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Olga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfd0da49188500b11e1832051026bd3
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+12:06:56 INFO  tests.TestBase - End of Test:  RegistrationPos
+12:06:56 INFO  tests.TestBase - start test:  RegistrationPos
+12:06:56 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:07:01 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:07:01 INFO  tests.TestBase - End of Test:  RegistrationPos
+12:07:01 INFO  tests.TestBase - start test:  RegistrationPos
+12:07:01 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+12:07:06 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+12:07:06 INFO  tests.TestBase - End of Test:  RegistrationPos

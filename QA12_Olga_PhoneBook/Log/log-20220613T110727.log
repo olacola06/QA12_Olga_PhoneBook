@@ -1,0 +1,88 @@
+11:07:32 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+11:07:37 INFO  tests.TestBase - start test:  RegistrationFailEmail
+11:07:37 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:07:42 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:07:42 INFO  tests.TestBase - registration with: email-> UserM447gmail.com and password-> OlaMar345$
+11:07:42 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:07:42 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:07:42 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+11:07:43 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+11:07:43 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+11:07:43 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+11:07:43 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+11:07:44 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+11:07:45 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.login_login__3EHKB :first-child
+11:07:45 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.login_login__3EHKB :first-child  was found
+11:07:45 INFO  tests.TestBase - End of Test:  RegistrationFailEmail
+11:07:45 INFO  tests.TestBase - start test:  RegistrationFailExistUser
+11:07:45 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:07:50 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:07:50 INFO  tests.TestBase - registration with: email-> UserM624@gmail.com and password-> OlaMar345$
+11:07:50 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:07:50 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:07:50 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+11:07:50 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+11:07:51 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+11:07:51 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+11:07:51 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+11:07:51 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+11:07:52 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.login_login__3EHKB :first-child
+11:07:52 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.login_login__3EHKB :first-child  was found
+11:07:52 INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+11:07:52 INFO  tests.TestBase - start test:  RegistrationFailPassword
+11:07:52 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:07:57 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:07:57 INFO  tests.TestBase - registration with: email-> UserM447@gmail.com and password-> OlaMar345
+11:07:57 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:07:57 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:07:57 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+11:07:58 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+11:07:58 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+11:07:58 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+11:07:59 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+11:07:59 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+11:08:00 INFO  manager.MyListener - Start searching element with locator-->By.cssSelector: div.login_login__3EHKB :first-child
+11:08:00 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.login_login__3EHKB :first-child  was found
+11:08:00 INFO  tests.TestBase - End of Test:  RegistrationFailPassword
+11:08:00 INFO  tests.TestBase - start test:  RegistrationPos
+11:08:00 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:08:05 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:08:05 INFO  tests.TestBase - registration with: email-> UserM447@gmail.com and password-> OlaMar345$
+11:08:05 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:08:05 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:08:05 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Emai']
+11:08:10 INFO  manager.MyListener - There is some problem-->https://contacts-app.tobbymarshall815.vercel.app/login
+11:08:10 INFO  manager.MyListener - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@placeholder='Emai']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KF54E9L', ip: '10.11.182.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Olga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3eef947a5cda826ccbcdeaf1a0e5e64a
+*** Element info: {Using=xpath, value=//*[@placeholder='Emai']}
+11:08:10 INFO  manager.MyListener - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@placeholder='Emai']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KF54E9L', ip: '10.11.182.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Olga\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3eef947a5cda826ccbcdeaf1a0e5e64a
+*** Element info: {Using=xpath, value=//*[@placeholder='Emai']}
+11:08:11 INFO  tests.TestBase - End of Test:  RegistrationPos
+11:08:11 INFO  tests.TestBase - start test:  RegistrationPosModels
+11:08:11 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:08:16 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:08:16 INFO  tests.TestBase - registration with: email-> UserO447@gmail.com and password-> OlaMar345$
+11:08:16 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //a[@href='/login']
+11:08:16 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@href='/login']  was found
+11:08:16 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Email']
+11:08:16 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Email']  was found
+11:08:17 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[@placeholder='Password']
+11:08:17 INFO  manager.MyListener - Element with locator-->By.xpath: //*[@placeholder='Password']  was found
+11:08:17 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()=' Registration']
+11:08:17 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()=' Registration']  was found
+11:08:17 INFO  manager.MyListener - Start searching element with locator-->By.xpath: //*[text()='Sign Out']
+11:08:17 INFO  manager.MyListener - Element with locator-->By.xpath: //*[text()='Sign Out']  was found
+11:08:17 INFO  tests.TestBase - End of Test:  RegistrationPosModels

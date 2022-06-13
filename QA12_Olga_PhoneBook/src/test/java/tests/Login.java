@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         if(app.login().elementExist()){
             app.login().logout();
@@ -28,7 +28,7 @@ public class Login extends TestBase {
         logger.info("Test finished --> Success");
     }
 
-    @Test
+    @Test(groups = {"forSmoke","forFast"})
     public void LoginPosModels(){
         User user = new User().withEmail("UserM624@gmail.com").withPassword("OlaMar345$");
         app.login().clickLoginBtn();
@@ -50,7 +50,7 @@ public class Login extends TestBase {
         Assert.assertFalse(app.login().elementExist());
     }
 
-    @Test
+    @Test(groups = {"forSmoke"})
     public void LoginNegPass(){
         User user = new User().withEmail("UserM624@gmailcom").withPassword("olamar345$");
         app.login().clickLoginBtn();

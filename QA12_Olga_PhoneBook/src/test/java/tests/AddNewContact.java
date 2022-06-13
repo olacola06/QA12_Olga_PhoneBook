@@ -43,7 +43,7 @@ public class AddNewContact extends TestBase {
         System.out.println("New contact created with Name - "+contact.getName()+" and with phone -"+contact.getPhone());
     }
 
-    @Test
+    @Test(groups = {"forSmoke"})
     public void oneContactAdd(){
         int countStart =app.contact().contactCount();
         logger.info( "Test'Add new contact' starts with count of contacts--->" +countStart);
@@ -76,7 +76,7 @@ public class AddNewContact extends TestBase {
         logger.info("Contact's list ends with "+countAfter+"contacts");
 
     }
-    @Test
+    @Test(groups = {"forSmoke"})
     public void removeOneContactWithDetails(){
         int countBefore = app.contact().contactCount();
         logger.info("Contact's list starts with "+countBefore+"contacts");
@@ -100,7 +100,7 @@ public class AddNewContact extends TestBase {
 
     }
 
-    @Test(enabled = true)
+    @Test(enabled = true, groups = {"forFast"})
     public void removeAllContacts(){
         app.contact().removeContactsList();
 

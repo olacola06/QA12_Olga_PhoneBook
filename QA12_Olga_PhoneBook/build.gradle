@@ -24,12 +24,27 @@ dependencies {
 
 test {
     useTestNG()
+
+    if (project.hasProperty('browser')) {
+        systemProperty('browser', "${browser}")
+    }
 }
-task reg(type: Test){
-    useTestNG(){
-     suites'src/test/resources/testng.xml'
-    }
-    if(project.hasProperty('browser')){
-        systemProperty('browser',"${browser}")
-    }
+
+    task reg(type: Test) {
+        useTestNG() {
+            def groups = System.getProperty('groups')
+            if(groups!=null){
+                includeGroups groups
+            }
+            def suite = System.getProperty('suite','')
+            if(suite.equals('smoke')){
+                suites 'src/test/resources/smoke.xml'
+            }else if(suite.equals('fast')){
+                suites 'src/test/resources/fast.xml'
+            }else
+            suites 'src/test/resources/testng.xml'
+        }
+        if (project.hasProperty('browser')) {
+            systemProperty('browser', "${browser}")
+        }
 }
