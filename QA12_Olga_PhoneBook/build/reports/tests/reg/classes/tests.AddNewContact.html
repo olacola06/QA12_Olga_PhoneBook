@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">12.692s</div>
+<div class="counter">5.847s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,13 @@
 </tr>
 </thead>
 <tr>
-<td class="success">removeAllContacts</td>
-<td class="success">12.692s</td>
+<td class="success">oneContactAdd</td>
+<td class="success">4.307s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">removeOneContactWithDetails</td>
+<td class="success">1.540s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,61 +92,57 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:57:16  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
-11:57:21  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
-11:57:21  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
-11:57:21  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
-11:57:21  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
-11:57:21  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
-11:57:21  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
-11:57:21  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
-11:57:22  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
-11:57:22  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
-11:57:22  INFO  tests.TestBase - start test:  removeAllContacts
-11:57:22  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:22  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-Total amount of contacts---&gt;1
-11:57:22  INFO  tests.TestBase - Test starts with contact---&gt;Contact(name=Olala3442, lastName=Ben, phone=+1233333442, email=Rff3442@gmail.com, address=Tel Aviv, description=Work contact)
-11:57:22  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='ADD']
-11:57:22  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='ADD']  was found
-11:57:22  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Name']
-11:57:23  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Name']  was found
-11:57:23  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Last Name']
-11:57:23  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Last Name']  was found
-11:57:23  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Phone']
-11:57:23  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Phone']  was found
-11:57:24  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='email']
-11:57:24  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='email']  was found
-11:57:24  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Address']
-11:57:24  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Address']  was found
-11:57:24  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='description']
-11:57:24  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='description']  was found
-11:57:25  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: div.add_form__2rsm2 :last-child
-11:57:25  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: div.add_form__2rsm2 :last-child  was found
-11:57:25  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:25  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:26  INFO  manager.MyListener - Start searching element with locator--&gt;By.tagName: h2
-11:57:26  INFO  manager.MyListener - Element with locator--&gt;By.tagName: h2  was found
-11:57:26  INFO  manager.MyListener - Start searching element with locator--&gt;By.tagName: h3
-11:57:26  INFO  manager.MyListener - Element with locator--&gt;By.tagName: h3  was found
-New contact created with Name - Olala3442 and with phone -+1233333442
-11:57:26  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:26  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:26  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:26  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:26  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Remove']
-11:57:26  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Remove']  was found
-11:57:27  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:27  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:27  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:27  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:27  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Remove']
-11:57:27  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Remove']  was found
-11:57:28  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:33  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:33  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
-11:57:38  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
-11:57:38  INFO  tests.TestBase - End of Test:  removeAllContacts
+<pre>08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+08:41:41  INFO  tests.TestBase - start test:  oneContactAdd
+08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;6
+08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;6
+08:41:41  INFO  tests.TestBase - Test'Add new contact' starts with count of contacts---&gt;6
+08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='ADD']
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='ADD']  was found
+08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Name']
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Name']  was found
+08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Last Name']
+08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Last Name']  was found
+08:41:42  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Phone']
+08:41:42  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Phone']  was found
+08:41:42  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='email']
+08:41:42  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='email']  was found
+08:41:42  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='Address']
+08:41:42  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='Address']  was found
+08:41:43  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: input[placeholder ='description']
+08:41:43  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: input[placeholder ='description']  was found
+08:41:43  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: div.add_form__2rsm2 :last-child
+08:41:43  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: div.add_form__2rsm2 :last-child  was found
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:45  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;7
+08:41:45  INFO  tests.TestBase - Test'Add new contact' ends with count of contacts---&gt;7
+08:41:45  INFO  tests.TestBase - End of Test:  oneContactAdd
+08:41:45  INFO  tests.TestBase - start test:  removeOneContactWithDetails
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:45  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;7
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:45  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;7
+08:41:45  INFO  tests.TestBase - Contact's list starts with 7contacts
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM h3
+08:41:45  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM h3  was found
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:45  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+08:41:45  INFO  manager.HelperBase - Deleted contact has phone number = +1233333030
+08:41:45  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Remove']
+08:41:46  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Remove']  was found
+08:41:47  INFO  manager.MyListener - Start searching element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM
+08:41:47  INFO  manager.MyListener - Element with locator--&gt;By.cssSelector: .contact-item_card__2SOIM  was found
+Total amount of contacts---&gt;6
+08:41:47  INFO  tests.TestBase - Contact's list ends with 6contacts
+08:41:47  INFO  tests.TestBase - End of Test:  removeOneContactWithDetails
 </pre>
 </span>
 </div>
@@ -153,7 +154,7 @@ New contact created with Name - Olala3442 and with phone -+1233333442
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 13.06.2022 11:57:39</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 16.06.2022 8:41:47</p>
 </div>
 </div>
 </body>

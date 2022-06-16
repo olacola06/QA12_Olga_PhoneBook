@@ -1,0 +1,24 @@
+08:20:13 INFO  tests.TestBase - start test:  RegistrationFailEmail
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationFailEmail
+08:20:13 INFO  tests.TestBase - start test:  RegistrationFailExistUser
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+08:20:13 INFO  tests.TestBase - start test:  RegistrationFailPassword
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationFailPassword
+08:20:13 INFO  tests.TestBase - start test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - start test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - start test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - start test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationPos
+08:20:13 INFO  tests.TestBase - start test:  RegistrationPosModels
+08:20:13 INFO  tests.TestBase - End of Test:  RegistrationPosModels
+08:20:13 INFO  tests.TestBase - start test:  LoginNegEmail
+08:20:13 INFO  tests.TestBase - End of Test:  LoginNegEmail
+08:20:13 INFO  tests.TestBase - start test:  LoginNegPass
+08:20:13 INFO  tests.TestBase - End of Test:  LoginNegPass
+08:20:14 INFO  tests.TestBase - start test:  LoginPos
+08:20:14 INFO  tests.TestBase - End of Test:  LoginPos
+08:20:14 INFO  tests.TestBase - start test:  LoginPosModels
+08:20:14 INFO  tests.TestBase - End of Test:  LoginPosModels
