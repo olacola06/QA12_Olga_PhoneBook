@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.748s</div>
+<div class="counter">10.486s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,13 +78,23 @@
 </tr>
 </thead>
 <tr>
+<td class="success">LoginNegEmail</td>
+<td class="success">6.641s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">LoginNegPass</td>
-<td class="success">1.630s</td>
+<td class="success">1.638s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">LoginPos</td>
+<td class="success">1.100s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">LoginPosModels</td>
-<td class="success">1.118s</td>
+<td class="success">1.107s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,34 +102,66 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:41:33  INFO  tests.TestBase - start test:  LoginNegPass
-08:41:33  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
-08:41:33  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
-08:41:33  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()='Sign Out']
-08:41:33  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()='Sign Out']  was found
-08:41:33  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
-08:41:33  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
-08:41:33  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
-08:41:33  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
-08:41:34  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
-08:41:34  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
-08:41:34  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
-08:41:34  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
-08:41:35  INFO  tests.TestBase - End of Test:  LoginNegPass
-08:41:35  INFO  tests.TestBase - start test:  LoginPosModels
-08:41:35  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
-08:41:40  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
-08:41:40  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
-08:41:40  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
-08:41:40  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
-08:41:40  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
-08:41:40  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
-08:41:40  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
-08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
-08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
-08:41:41  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
-08:41:41  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
-08:41:41  INFO  tests.TestBase - End of Test:  LoginPosModels
+<pre>15:19:18  INFO  tests.TestBase - start test:  LoginNegEmail
+15:19:18  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:18  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:18  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()='Sign Out']
+15:19:18  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()='Sign Out']  was found
+15:19:18  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
+15:19:18  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
+15:19:18  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
+15:19:18  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
+15:19:18  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
+15:19:18  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
+15:19:19  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
+15:19:19  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
+15:19:19  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:24  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:24  INFO  tests.TestBase - End of Test:  LoginNegEmail
+15:19:24  INFO  tests.TestBase - start test:  LoginNegPass
+15:19:24  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:29  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:29  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
+15:19:29  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
+15:19:30  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
+15:19:30  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
+15:19:30  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
+15:19:30  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
+15:19:30  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
+15:19:30  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
+15:19:31  INFO  tests.TestBase - End of Test:  LoginNegPass
+15:19:31  INFO  tests.TestBase - start test:  LoginPos
+15:19:31  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:36  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:36  INFO  tests.TestBase - Login with data: --&gt;UserM624@gmail.com; OlaMar345$
+15:19:36  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
+15:19:36  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
+15:19:36  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
+15:19:36  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
+15:19:37  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
+15:19:37  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:37  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:37  INFO  tests.TestBase - Test finished --&gt; Success
+15:19:37  INFO  tests.TestBase - End of Test:  LoginPos
+15:19:37  INFO  tests.TestBase - start test:  LoginPosModels
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:37  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()='Sign Out']
+15:19:37  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()='Sign Out']  was found
+15:19:37  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //a[@href='/login']
+15:19:38  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //a[@href='/login']  was found
+15:19:38  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Email']
+15:19:38  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Email']  was found
+15:19:38  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[@placeholder='Password']
+15:19:38  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[@placeholder='Password']  was found
+15:19:38  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //button[text()=' Login']
+15:19:38  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //button[text()=' Login']  was found
+15:19:39  INFO  manager.MyListener - Start searching element with locator--&gt;By.xpath: //*[text()='Sign Out']
+15:19:39  INFO  manager.MyListener - Element with locator--&gt;By.xpath: //*[text()='Sign Out']  was found
+15:19:39  INFO  tests.TestBase - End of Test:  LoginPosModels
 </pre>
 </span>
 </div>
@@ -131,7 +173,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 16.06.2022 8:41:47</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 16.06.2022 15:19:39</p>
 </div>
 </div>
 </body>
