@@ -1,0 +1,12 @@
+14:35:34 INFO  tests.TestBase - start test:  RegistrationFailExistUser
+14:35:34 INFO  tests.TestBase - End of Test:  RegistrationFailExistUser
+14:35:34 INFO  tests.TestBase - start test:  RegistrationPosModels
+14:35:34 INFO  tests.TestBase - End of Test:  RegistrationPosModels
+14:35:34 INFO  tests.TestBase - start test:  LoginNegPass
+14:35:34 INFO  tests.TestBase - End of Test:  LoginNegPass
+14:35:34 INFO  tests.TestBase - start test:  LoginPosModels
+14:35:34 INFO  tests.TestBase - End of Test:  LoginPosModels
+14:35:34 INFO  tests.TestBase - start test:  oneContactAdd
+14:35:34 INFO  tests.TestBase - End of Test:  oneContactAdd
+14:35:34 INFO  tests.TestBase - start test:  removeOneContactWithDetails
+14:35:34 INFO  tests.TestBase - End of Test:  removeOneContactWithDetails
